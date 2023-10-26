@@ -9,6 +9,10 @@ return {
     "rafamadriz/friendly-snippets", -- useful snippets
     "onsails/lspkind.nvim", -- vs-code like pictograms
   },
+	opts = function(_, opts)
+    table.insert(opts.sorting.comparators, 1, require("clangd_extensions.cmp_scores"))
+  end,
+
   config = function()
     local cmp = require("cmp")
 
