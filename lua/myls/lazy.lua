@@ -9,6 +9,10 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.opt.rtp:prepend(lazypath)
 
+--Enables all plugins
 require("lazy").setup("myls.plugins")
+--Enables Custom Keybindings

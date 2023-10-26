@@ -1,4 +1,4 @@
-require('myls.core.keymaps')
+require("myls.core.keymaps")
 local opt = vim.opt
 
 -- Tab / Indentation
