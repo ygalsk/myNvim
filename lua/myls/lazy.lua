@@ -15,4 +15,6 @@ vim.opt.rtp:prepend(lazypath)
 
 --Enables all plugins
 require("lazy").setup("myls.plugins")
---Enables Custom Keybindings
+-- " In your init.lua or init.vim
+vim.opt.termguicolors = true
+require("bufferline").setup{}
