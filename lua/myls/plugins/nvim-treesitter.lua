@@ -28,7 +28,7 @@ return {
 	  "c",
 	  "cpp",
           "javascript",
-          "typescript"
+          "typescript",
           "tsx",
           "yaml",
           "html",
