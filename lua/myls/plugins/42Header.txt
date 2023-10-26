@@ -1,4 +1,0 @@
-return {
-
-	vim.cmd('source ~/.config/nvim/lua/myls/plugins/stdheader(1).vim'),
-}
