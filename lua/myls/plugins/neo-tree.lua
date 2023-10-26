@@ -22,7 +22,7 @@ return {
                     },
             },
         })
-				  vim.api.nvim_set_keymap('n', '<Space>e', [[:lua require('neo-tree.command').execute({ toggle = true, source = 'filesystem', position = 'left' })<CR>]], { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<Space>e', [[:lua require('neo-tree.command').execute({ toggle = true, source = 'filesystem', position = 'left' })<CR>]], { noremap = true, silent = true })
         end,
       },
     },
