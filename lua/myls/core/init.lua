@@ -41,7 +41,3 @@ opt.mouse:append("a")
 opt.clipboard:append("unnamedplus")
 opt.modifiable = true
 opt.encoding = "UTF-8"
-
-
--- Importing 42StdHeader
-vim.cmd(' source ~/.config/nvim/lua/myls/plugins/stdheader(1).vim')
