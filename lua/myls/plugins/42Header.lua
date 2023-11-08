@@ -1,7 +1,7 @@
 return {
     {
         "42Paris/42header",
-        event = "InsertEnter",
+        lazy = false,
     } --,
 		-- opts = function ()
 			-- local header = require("42header")
