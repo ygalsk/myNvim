@@ -30,10 +30,11 @@ return{
       ensure_installed = {
         "clangd",
         "lua_ls",
-        "graphql",
-        "emmet_ls",
-        "prismals",
-        "pyright",
+				-- "codelldb",
+        -- "graphql",
+        -- "emmet_ls",
+        -- "prismals",
+        -- "pyright",
       },
 		  -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
