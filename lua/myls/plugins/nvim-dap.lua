@@ -36,18 +36,7 @@ return {
       opts = {},
     },
 
-    -- which key integration
-    {
-      "folke/which-key.nvim",
-      optional = true,
-      opts = {
-        defaults = {
-          ["<leader>d"] = { name = "+debug" },
-        },
-      },
-    },
-
-    -- mason.nvim integration
+       -- mason.nvim integration
     {
       "jay-babu/mason-nvim-dap.nvim",
       dependencies = "mason.nvim",
@@ -91,16 +80,16 @@ return {
     { "<leader>dw", function() require("dap.ui.widgets").hover() end, desc = "Widgets" },
   },
 
-  config = function()
-    local Config = require("lazyvim.config")
-    vim.api.nvim_set_hl(0, "DapStoppedLine", { default = true, link = "Visual" })
-
-    for name, sign in pairs(Config.icons.dap) do
-      sign = type(sign) == "table" and sign or { sign }
-      vim.fn.sign_define(
-        "Dap" .. name,
-        { text = sign[1], texthl = sign[2] or "DiagnosticInfo", linehl = sign[3], numhl = sign[3] }
-      )
-    end
-  end,
+  -- config = function()
+  --   local Config = require("lazyvim.config")
+  --   vim.api.nvim_set_hl(0, "DapStoppedLine", { default = true, link = "Visual" })
+  --
+  --   for name, sign in pairs(Config.icons.dap) do
+  --     sign = type(sign) == "table" and sign or { sign }
+  --     vim.fn.sign_define(
+  --       "Dap" .. name,
+  --       { text = sign[1], texthl = sign[2] or "DiagnosticInfo", linehl = sign[3], numhl = sign[3] }
+  --     )
+  --   end
+	--   end,
 }
