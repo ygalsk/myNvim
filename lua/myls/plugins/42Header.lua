@@ -1,21 +1,13 @@
 return {
-    {
-        "42Paris/42header",
-<<<<<<< HEAD
-        event = "InsertEnter",
-    }
-=======
-        lazy = false,
-    } --,
-		-- opts = function ()
-			-- local header = require("42header")
-
-			-- header.setup({
-				-- name = {
-					-- user42 = vim.g.user42,
-					-- mail42 = vim.g.mail42,
-			-- },
-		-- })
-		-- end,
->>>>>>> 5d9d8911b485356b9af312309e5f90688d1b0e90
+    "Diogo-ss/42-header.nvim",
+    lazy = false,
+    config = function()
+        local header = require("42header")
+        header.setup({
+            default_map = true, -- default Mapping <F1> in normal mode
+            auto_update = true,  -- update header when saving
+            user = "dkremer", -- your user
+            mail = "dkremer@student.42heilbronn.de", -- your mail
+        })
+    end
 }
