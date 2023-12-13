@@ -1,6 +1,6 @@
 # myNvim
 
-This is my Configuration of Nvim for using it at 42 Heilbronn
+This is my Configuration of Nvim for using it at **42 Heilbronn**
 
 installed are 3 **"mandatory"** Plugins, 42Header, Norminette and CFormatter42
 
