@@ -10,3 +10,7 @@ In most cases, while using nvim on your personal Workstation running on Linux, t
 https://www.lunarvim.org/de/docs/installation
 ```
 
+But to run it on a 42 Session you will need to install brew
+```
+https://github.com/kube/42homebrew
+```
