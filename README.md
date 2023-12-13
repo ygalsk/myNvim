@@ -14,3 +14,9 @@ But to run it on a 42 Session you will need to install brew
 ```
 https://github.com/kube/42homebrew
 ```
+
+After you installed brew you will need to install the gettext lib
+
+```
+brew install gettext
+```
