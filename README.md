@@ -2,6 +2,8 @@
 
 This is my Configuration of Nvim for using it at 42 Heilbronn
 
+installed are 3 **"mandatory"** Plugins, 42Header, Norminette and CFormatter42
+
 ## What dependencies do you need?
 
 In most cases, while using nvim on your personal Workstation running on Linux, the only dependencies you need are Python, Rust and npm.
