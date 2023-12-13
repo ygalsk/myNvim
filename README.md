@@ -35,3 +35,13 @@ for installing NerdFonts please visit this Git Repo
 ```
 https://github.com/ryanoasis/nerd-fonts
 ```
+
+## Installing my config
+
+to install my config just run this command in your Terminal
+
+```
+git clone git@github.com:ygalsk/myNvim.git ~/.config/nvim && nvim
+```
+
+
