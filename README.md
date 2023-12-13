@@ -20,3 +20,11 @@ After you installed brew you will need to install the gettext lib
 ```
 brew install gettext
 ```
+
+Installing nvim for macos
+
+```
+curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
+tar xzf nvim-macos.tar.gz
+./nvim-macos/bin/nvim
+```
