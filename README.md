@@ -28,3 +28,10 @@ curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.t
 tar xzf nvim-macos.tar.gz
 ./nvim-macos/bin/nvim
 ```
+
+Installing NerdFonts
+
+for installing NerdFonts please visit this Git Repo
+```
+https://github.com/ryanoasis/nerd-fonts
+```
