@@ -7,15 +7,9 @@ Installed are 3 **"mandatory"** Plugins, 42Header, Norminette and CFormatter42
 ## What dependencies do you need?
 
 In most cases, while using nvim on your personal Workstation running on Linux, the only dependencies you need are Python, Rust and npm.
-(look at the installation guide of Lunar-Vim)
-```
-https://www.lunarvim.org/de/docs/installation
-```
+(look at the installation guide of [Lunar-Vim](https://www.lunarvim.org/de/docs/installation))
 
-## But to run it on a 42 Session you will need to install brew
-```
-https://github.com/kube/42homebrew
-```
+## But to run it on a 42 Session you will need to install [brew](https://github.com/kube/42homebrew)
 
 ## After you installed brew you will need to install the gettext lib
 
@@ -33,10 +27,7 @@ tar xzf nvim-macos.tar.gz
 
 ## Installing NerdFonts
 
-for installing NerdFonts please visit this Git Repo
-```
-https://github.com/ryanoasis/nerd-fonts
-```
+for installing NerdFonts please visit this [Git Repo](https://github.com/ryanoasis/nerd-fonts)
 
 ## Installing my config
 
