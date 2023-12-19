@@ -12,8 +12,8 @@ end
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.opt.rtp:prepend(lazypath)
-vim.g.user42 = 'dkremer'
-vim.g.mail42 = 'dkremer@student.42heilbronn.de'
+-- vim.g.user42 = 'dkremer'
+-- vim.g.mail42 = 'dkremer@student.42heilbronn.de'
 
 --Enables all plugins
 require("lazy").setup({{import = "myls.plugins"}, {import = "myls.plugins.lsp"}})
