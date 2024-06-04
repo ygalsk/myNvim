@@ -1,10 +1,7 @@
 local config = function()
-	local theme = require("lualine.themes.tokyonight")
-	theme.normal.c.bg = nil
-
 	require('lualine').setup {
 		options = {
-			theme = theme,
+			theme = 'horizon',
 			globalstatus = true,
 		},
 		sections = {

@@ -1,37 +1,54 @@
 return {
---
--- TokyoNight/Tokyonight_Storm Theme
-
--- <<<<<<< HEAD
--- "folke/tokyonight.nvim",
--- =======
--- TokyoNight/Tokyonight_Storm Theme
-
-"folke/tokyonight.nvim",
--- lazy = false,
--- priority = 888,
--- config = function()
-	-- vim.cmd([[colorscheme tokyonight-storm]])
--- end,
--- }
-
--- NightFox/CarbonFox Theme
---
--- "EdenEast/nightfox.nvim",
--- >>>>>>> 5d9d8911b485356b9af312309e5f90688d1b0e90
-lazy = false,
-priority = 888,
-config = function()
-	vim.cmd([[colorscheme tokyonight-storm]])
-end,
+	{
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "catppuccin",
+		},
+	},
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+		opts = {
+			no_italic = true,
+			term_colors = true,
+			transparent_background = false,
+			styles = {
+				comments = {},
+				conditionals = {},
+				loops = {},
+				functions = {},
+				keywords = {},
+				strings = {},
+				variables = {},
+				numbers = {},
+				booleans = {},
+				properties = {},
+				types = {},
+			},
+			color_overrides = {
+				mocha = {
+					base = "#000000",
+					mantle = "#000000",
+					crust = "#000000",
+				},
+				latte = {
+					base = "#f6f7f8",
+				},
+			},
+			integrations = {
+				dap = true,
+				dap_ui = false,
+				treesitter_context = true,
+				telescope = {
+					enabled = true,
+					style = "nvchad",
+				},
+				dropbar = {
+					enabled = true,
+					color_mode = true,
+				},
+			},
+		},
+	},
 }
-
--- NightFox/CarbonFox Theme
-
--- "EdenEast/nightfox.nvim",
--- lazy = false,
--- priority = 888,
--- config = function()
-	-- vim.cmd([[colorscheme carbonfox]])
--- end,
--- }
