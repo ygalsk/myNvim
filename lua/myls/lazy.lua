@@ -19,3 +19,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({{import = "myls.plugins"}, {import = "myls.plugins.lsp"}})
 -- " In your init.lua or init.vim
 vim.opt.termguicolors = true
+vim.cmd.colorscheme('catppuccin-mocha')
