@@ -1,40 +1,60 @@
 # myNvim
 
-This is my Configuration of Nvim for using it at **42 Heilbronn**
+This is my Neovim configuration for use at **42 Heilbronn**
 
-Installed are 3 **"mandatory"** Plugins, 42Header, Norminette and CFormatter42
+## Features
 
-## What dependencies do you need?
+- Customized for 42 Heilbronn environment
+- Includes "mandatory" plugins: 42Header, Norminette, and CFormatter42
+- Utilizes Lazy.nvim for plugin management
+- Incorporates various plugins for enhanced functionality:
+  - LSP support
+  - Treesitter for improved syntax highlighting
+  - Completion with nvim-cmp
+  - File explorer with neo-tree
+  - And many more!
 
-In most cases, while using nvim on your personal Workstation running on Linux, the only dependencies you need are Python, Rust and npm.
-(look at the installation guide of [Lunar-Vim](https://www.lunarvim.org/de/docs/installation))
+## Dependencies
 
-## But to run it on a 42 Session you will need to install [brew](https://github.com/kube/42homebrew)
+For personal workstations (Linux):
+- Python
+- Rust
+- npm
 
-## After you installed brew you will need to install the gettext lib
+For 42 sessions:
+- [Homebrew](https://github.com/kube/42homebrew)
+- gettext library
+
+## Installation
+
+1. Install Neovim (for macOS):
 
 ```
-brew install gettext
+curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz tar xzf nvim-macos.tar.gz ./nvim-macos/bin/nvim
 ```
 
-## Installing nvim for macos
+2. Install NerdFonts (visit [Nerd Fonts repository](https://github.com/ryanoasis/nerd-fonts) for instructions)
 
-```
-curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
-tar xzf nvim-macos.tar.gz
-./nvim-macos/bin/nvim
-```
-
-## Installing NerdFonts
-
-for installing NerdFonts please visit this [Git Repo](https://github.com/ryanoasis/nerd-fonts)
-
-## Installing my config
-
-to install my config just run this command in your Terminal
+3. Install this configuration:
 
 ```
 git clone git@github.com:ygalsk/myNvim.git ~/.config/nvim && nvim
 ```
 
+## Additional Setup
 
+For 42 sessions:
+1. Install Homebrew
+2. Install gettext:
+
+```
+brew install gettext
+```
+
+## Usage
+
+After installation, launch Neovim to automatically set up the configuration and plugins.
+
+## Customization
+
+Feel free to modify the configuration files in `~/.config/nvim/lua/myls/` to suit your preferences.
