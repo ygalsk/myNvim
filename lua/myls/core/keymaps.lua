@@ -1,14 +1,12 @@
 local keymap = vim.keymap
+local opts = { noremap = true, silent = true }
 
-local opts = {noremap = true, silent = true}
-																-- for conciseness
---------------------
--- General Keymaps -------------------
-
--- Window Managment
+-- Window Management
 keymap.set("n", "<leader>sv", "<C-w>v", opts) -- split vertically
-keymap.set("n", "<leader>sh", ":split<CR>", opts) -- split hirozontally
-keymap.set("n", "<leader>sc", "<C-w>c", opts) -- Close vsplit
+keymap.set("n", "<leader>sh", ":split<CR>", opts) -- split horizontally
+keymap.set("n", "<leader>sc", "<C-w>c", opts) -- close split
+keymap.set("n", "<leader>bp", ":bprevious<CR>", opts) -- previous buffer
+keymap.set("n", "<leader>bn", ":bnext<CR>", opts) -- next buffer
 
 -- Pane Navigation
 keymap.set("n", "<C-h>", "<C-w>h", opts) -- Navigate Left

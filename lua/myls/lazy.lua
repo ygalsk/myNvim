@@ -14,7 +14,15 @@ vim.g.maplocalleader = " "
 vim.opt.rtp:prepend(lazypath)
 -- vim.g.user42 = 'dkremer'
 -- vim.g.mail42 = 'dkremer@student.42heilbronn.de'
+local keymap = vim.keymap
+local opts = { noremap = true, silent = true }
 
+-- Define key mappings
+keymap.set("n", "<leader>sv", "<C-w>v", opts)
+keymap.set("n", "<leader>sh", ":split<CR>", opts)
+keymap.set("n", "<leader>sc", "<C-w>c", opts)
+keymap.set("n", "<leader>bp", ":bprevious<CR>", opts)
+keymap.set("n", "<leader>bn", ":bnext<CR>", opts)
 --Enables all plugins
 require("lazy").setup({{import = "myls.plugins"}, {import = "myls.plugins.lsp"}})
 -- " In your init.lua or init.vim
