@@ -17,6 +17,13 @@ vim.opt.rtp:prepend(lazypath)
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
+
+vim.filetype.add({
+  extension = {
+    tpp = "cpp",
+  },
+})
+
 -- Define key mappings
 keymap.set("n", "<leader>sv", "<C-w>v", opts)
 keymap.set("n", "<leader>sh", ":split<CR>", opts)
